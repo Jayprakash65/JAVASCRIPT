@@ -37,9 +37,11 @@
     console.log("B:" , myarr);
 
     const mya2 = myarr.splice(1, 3)
+    console.log("c:" , myarr);
+
     console.log(mya2);
 
-
+    //"Slice() method se hum array ke kuch specific parts ko alag karke naye array mein store kar sakte hain, lekin original array ko change nahi karte. Jabki splice() method se hum array ko modify karke elements ko hata sakte hain ya naye elements add kar sakte hain."
 
 
 
