@@ -13,8 +13,12 @@
 //----------------------------------------------------------------------------------------------------------------------
 
 // object literals
+
+const mySym = Symbol("key1")
+
 const user = {
-    name: "jay",         //background mai name ko string hi mana ja raha hai so string na bhi lagye tho chalega or ham jo no tarhai sai isley acess kar sakte hai( dot sai bhi or [ ] sai bhi )
+    [mySym]: "mykey1",
+    name: "jay",                //background mai name ko string hi mana ja raha hai so string na bhi lagye tho chalega or ham jo no tarhai sai isley acess kar sakte hai( dot sai bhi or [ ] sai bhi )
     age: 18,
     location: "west bengal",
     "full name": "jayprakash"   // ab ham srif isey [ ] sai hi acess kar skate hai , dot sai nahi. keuki ab usmai string lagadiya pahle jab string nahi lagate the tab tab dono tarhai sai cess kar sakte the lagane ke bad ab nahikar sakte.
@@ -22,27 +26,28 @@ const user = {
 
 // console.log(user.age); // ham aisey declar kar sakte hai hai but not good way.
 // console.log(user["age"]) 
+// console.log(user["full name"]) 
+// console.log(user[mySym]);
 
-console.log(user["full name"]) 
 
-
-// changes in value 
+//// changes in value 
 
 user.name = "prakash"   
 //console.log(user.name);
 
 
-//agr object ko freeze(koi value change nahi hogi) karna ho tho.
+////agr object ko freeze(koi value change nahi hogi) karna ho tho.
 
 //Object.freeze(user)
-//console.log(user);
+user.name = "LLLLLLL"
+//onsole.log(user);
 
 
 user.greeting = function(){
     console.log("Hello JS user");
 }
 user.greetingTwo = function(){
-    console.log(`Hello JS user, ${this.name}`);
+    console.log(`Hello JS user, ${this.name}`);    
 }
 
 console.log(user.greeting());
