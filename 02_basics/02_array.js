@@ -11,7 +11,7 @@ const dcheros = ['superman', 'flash', 'batman']
 // console.log(allhero);
 
 
-//---------- spread operator ...  -----------------
+//---------- spread operator ...  ----------------- used to merge arrays
 
 const godheros = [...god, ...dcheros]
 //console.log(godheros)

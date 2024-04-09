@@ -23,8 +23,8 @@
 
     let myarrStr = myarr.join()
 
-    // console.log(meraarr);     // Default separator ke saath
-    // console.log(meraarrStr);  // Output: "apple,banana,orange,grapes" 
+    // console.log(myarr);     // Default separator ke saath
+    // console.log(myarrStr);  // Output: "apple,banana,orange,grapes" 
     
     
 // slice, splice
