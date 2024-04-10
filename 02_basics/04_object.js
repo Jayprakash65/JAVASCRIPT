@@ -68,4 +68,40 @@ console.log(tinderUser.hasOwnProperty('id'));  //  isiey ham check kar rahe hai 
 
 
 
+// OBJECT DE-STRUCTURE
 
+/* Object de-structuring mein hum ek object ko kholkar uske parts ko alag-alag variables mein store karte hain. Jaise ki agar humare paas ek object hai: */
+
+const toyBox = {
+    teddy: 'Teddy Bear',
+    car: 'Toy Car',
+    ball: 'Toy Ball'
+  };
+
+  
+const { teddy, car, ball } = toyBox;
+
+console.log(teddy); // Output: Teddy Bear
+console.log(car);   // Output: Toy Car
+console.log(ball);  // Output: Toy Ball
+
+
+// JSON API
+
+/*JSON API ek communication protocol hai jo data exchange karne ke liye istemal hota hai. Data ko JSON format mein bhejkar aur prapt karke communicate kiya jata hai. Example: */
+   
+{
+    "key": "value"       //syantax
+}
+  
+{
+    "name" = "jay"
+    "cousename" = "free"
+}  
+
+[
+    {},
+    {},
+    {}
+    
+]
