@@ -50,5 +50,30 @@ function calculateCafrtPrice(...num1){
 
 // how to pass object in function and use it 
 
+const user = {
+    username:  "jay",
+    price:  1000
+}
+
+function handleObject(user) {
+     console.log(`username is ${user.username} and price is ${user.price}`);
+}
+
+//handleObject(user)   // calling the function
+
+// handleObject({
+//     username: "sam",
+//     price: 399
+// })
 
 
+// how to pass array in function and use it 
+
+const myNewArray = [200, 400, 100, 600]
+
+function handleArray(getArray) {
+    return getArray[1]
+}
+
+const secondArray = handleArray(myNewArray)
+console.log(secondArray);
