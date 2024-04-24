@@ -80,7 +80,7 @@ const user = {
 
 
 
-//-------------------------- implicit return => means paranticise use nahi karna hai in onle line statement -------------------
+//-------------------------- implicit return => means paranticise use nahi karna hai in one line statement -------------------
 
 const addTwo = (num1,num2) =>  num1 + num2
 
