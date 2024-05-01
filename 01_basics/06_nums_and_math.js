@@ -22,7 +22,7 @@ const core = 10000000
 
 console.log(Math);
 
-// console.log(Math.abs(-8));   //covernt negative value in to postive but dont convert postive to negative 
+// console.log(Math.abs(-8));   //convert negative value in to postive but dont convert postive to negative 
 // console.log(Math.round(4.9)); // simaple roundoff like math
 // console.log(Math.ceil(4.9)); 
 // console.log(Math.floor(4.6));

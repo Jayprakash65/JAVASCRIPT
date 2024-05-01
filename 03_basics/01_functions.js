@@ -34,8 +34,8 @@ function loginUserMessage(username) {
     }
 }
 
-//console.log(loginUserMessage("jayprakash")); // Output: "jayprakash just logged in"
-// console.log(loginUserMessage()); // Output: "Plz enter your name"
+//console.log(loginUserMessage("jayprakash"));    // Output: "jayprakash just logged in"
+// console.log(loginUserMessage());           // Output: "Plz enter your name"
 
 
 

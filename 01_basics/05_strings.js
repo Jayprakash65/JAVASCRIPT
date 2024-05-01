@@ -11,7 +11,7 @@ const repo  = 1
 
 //// Anthor way to declare string 
 
- const instaName = new String('jayprakash123');  // typeof---> object
+ const instaName = new String('jayprakash-123');  // typeof---> object
 //console.log(typeof instaName )  //output --->object
 
 
@@ -40,8 +40,7 @@ const url = "https:jay.com/jay%20yadav"
 
 console.log(url.includes('prakash'));  // output false because prakash not exits in url 😁
 
-
-
+console.log(instaName.split('-'));
 
 
 

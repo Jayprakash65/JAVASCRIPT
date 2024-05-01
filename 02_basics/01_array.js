@@ -18,7 +18,12 @@
     //myarr.unshift(9)      // Ye method array ke shuruwat mein ek ya zyada items ko add karne ke liye use hota hai. 
     //myarr.shift()         // Ye method array se first item ko hata deta hai.
     
+    // console.log(myarr.includes(9));  // for question kaya 9 myarr mai include hai ?? ans: nahi
+    // console.log(myarr.indexOf(9));    // OUTPUT: -1(FALSE)
     
+
+
+
  // .join() method ka istemal array ke saare elements ko ek string mein jodne ke liye
 
     let myarrStr = myarr.join()
@@ -37,7 +42,7 @@
     console.log("B:" , myarr);
 
     const mya2 = myarr.splice(1, 3)
-    console.log("c:" , myarr);
+    console.log("c:" , myarr);        // original arry manupulate ho gaya 
 
     console.log(mya2);
 

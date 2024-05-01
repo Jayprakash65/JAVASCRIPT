@@ -23,7 +23,8 @@ const regularUser = {
 
 //console.log(regularUser.fullname.userfullname.lastname);
 
-//// comabining the objects
+
+//// combining the objects
 
 const obj1 = {1: "a", 2: "b", 3: "c"}
 const obj2 = {4: "d", 5: "e", 6: "f"}
@@ -45,13 +46,13 @@ const users = [
     },
 
     {
-        id: 1,
+        id: 2,
         email: "j@gamil.com",
 
     },
 
     {
-        id: 1,
+        id: 3,
         email: "j@gamil.com",
 
     },
