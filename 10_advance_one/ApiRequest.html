@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card{
+            border: 1px solid #ccc;
+            margin: 20px;
+            height: 250px;
+            width: 200px;
+        }
+        img{
+            height: 50px;
+            margin-left: 65px;
+            margin-top: 20px;
+            border-radius: 40px;
+        }
+        p{
+            margin-left:10px;
+            margin-top: 20px;
+        }
+        .button{
+            height: 30px;
+            width: 70px;
+            margin-left: 60px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="" alt="pic">
+        <p>Name: <span class="name"></span></p>
+        <p>Followers: <span class="followerCount"></span></p>
+        <button class="button">Get Data</button>
+        
+    </div>
+</body>
+<script>
+// old way to to send api request  xmlHTTPRequest
+
+
+
+
+const getData = function(){
+    const xhr = new XMLHttpRequest()
+    const requestUrl = 'https://api.github.com/users/jayprakash65'
+    xhr.open('GET', requestUrl);
+
+    xhr.onreadystatechange = function(){
+    //console.log(xhr.readyState);
+
+    if(xhr.readyState === 4){
+
+        const data = JSON.parse(this.responseText)
+        console.log(data);
+        
+        const name  = document.querySelector('.name')
+        const followerCount = document.querySelector('.followerCount')
+        const profileImage = document.querySelector('img')
+
+        name.textContent = data.name
+        followerCount.textContent = data.followers
+        profileImage.src = data.avatar_url
+
+        
+        
+        
+    }
+}
+
+
+
+xhr.send()
+
+}
+
+const button = document.querySelector('.button')
+
+button.addEventListener('click', getData)
+
+
+
+</script>
+</html>
