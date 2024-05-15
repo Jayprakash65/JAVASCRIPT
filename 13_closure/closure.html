@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>closure</title>
+</head>
+<body>
+    <body style="background-color: #313131;">
+        <button id="orange">Orange</button>
+        <button id="green">Green</button>
+</body>
+<script>
+
+// --------------------------- LEXCIAL SCOPING --------------------------------
+
+
+    // function init() {
+    //     let name = "Mozilla"; 
+    //     function displayName() {
+    //         console.log(name); 
+    //     }
+    //     displayName();
+    // }
+    // init();
+
+
+
+    // // outer ko pita ji jaisey mano outer se means pita ji se dono bache inner and innertwo dono username acss kar skate hai but pita bacho se secret  acess nahi kar sakta and na bhai bhai dono secret  share kar sakte hai 
+
+    // function outer (){
+    //     let username = 'jay'
+    //     console.log('OUTER', secret);                   // no acess
+
+    //     function inner(){
+    //         let secret = 'my123'
+    //         console.log('inner', username);
+    //     }
+
+    //     function innerTwo(){
+    //         console.log('innerTwo', username);
+    //         console.log(secret);                   // no acess
+    //     }
+
+    //     inner()
+    //     innerTwo()
+
+    // }   
+
+    // //console.log('too outer', username);    // username access nahi ho payega out of scope
+    // outer()
+        
+
+
+
+// ----------------------------- closure -----------------------------------
+// pura ka pura "lexical socpe" hi return kar dete hai
+
+// function outer() {
+//   var a = 10;
+
+//   function inner() {
+//     console.log(a);
+//   }
+
+//   return inner;
+// }
+
+// var innerFunction = outer();
+
+// innerFunction(); // 10
+
+// // Outer function khatam ho chuka hai, lekin inner function abhi bhi a variable ko use kar sakta hai.
+
+
+
+
+</script>
+
+<script>
+// parctical example in closure 
+
+    // document.getElementById('orange').onclick = function(){
+    //     document.body.style.backgroundColor = `orange`
+    // }
+
+    // document.getElementById('green').onclick = function(){
+    //     document.body.style.backgroundColor = `green`
+    // }
+
+    
+
+    // ab soho tumehey 100 button dede phir kaya copy paste karte rahoge kaya  so hame colosour ka use karngey 
+
+    function clickHandler(color){
+        //document.body.style.backgroundColor = `${color}`
+
+        return function(){
+            document.body.style.backgroundColor = `${color}`
+        }
+        
+    }
+
+    document.getElementById('orange').onclick = clickHandler('orange')
+    document.getElementById('green').onclick = clickHandler('green')
+
+
+</script>
+</html>
