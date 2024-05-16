@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html body{
+    height: 100%;
+    width: 100%;
+}
+.conatiner{
+    height: 300px;
+    width: 300px;
+    border: solid 0.5px black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+h1{
+    margin: 30px;
+    margin-left: 48px;
+}
+.count{
+    margin-left: 118px;
+    font-size: 50px;
+}
+.de-in{
+    height: 20px;
+    width: 100% ;
+    margin-left: 104px;
+}
+.decrement{
+    height: 30px;
+    width: 30px;
+}
+.increment{
+    height: 30px;
+    width: 30px;
+}
+.reset{
+
+    margin-left: 115px;
+    height: 30px;
+    width: 50px;
+
+}
