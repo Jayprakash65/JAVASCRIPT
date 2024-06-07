@@ -31,6 +31,7 @@ const obj2 = {4: "d", 5: "e", 6: "f"}
 
 // const  obj3 = { obj1, obj2}
 //const obj3 = Object.assign({}, obj1, obj2,)
+
 const obj3 = {...obj1, ...obj2};               // 90% of the ey syntax hi use karengey using spread operator 
 //console.log(obj3);
 
@@ -82,7 +83,7 @@ const toyBox = {
   };
 
   
-const { teddy, car, ball } = toyBox;
+const { teddy, car, ball } = toyBox;    // const uske bad curly braket uske bad = kaha se value extract karni hai 
 
 console.log(teddy); // Output: Teddy Bear
 console.log(car);   // Output: Toy Car
@@ -95,19 +96,20 @@ console.log(ball);  // Output: Toy Ball
 // JSON API
 
 /*JSON API ek communication protocol hai jo data exchange karne ke liye istemal hota hai. Data ko JSON format mein bhejkar aur prapt karke communicate kiya jata hai. Example: */
-   
-{
-    "key": "value"       //syantax
-}
-  
-{
-    "name" = "jay"
-    "cousename" = "free"
-}  
+ 
 
-[
-    {},
-    {},
-    {}
+// {
+//     "key": "value"       //syantax
+// }
+  
+// {
+//     "name" = "jay"
+//     "cousename" = "free"
+// }  
+
+// [
+//     {},
+//     {},
+//     {}
     
-]
+// ]

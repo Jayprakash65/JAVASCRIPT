@@ -1,4 +1,4 @@
-// THIS is used to acess cureent contex (simple value ; variable kaya store kar rahr hai wohi context hai means value )
+// "THIS" is used to acess cureent contex (simple value ; variable kaya store kar rahr hai wohi context hai means value )
 
 const user = {
     username: "jay",
@@ -50,14 +50,6 @@ const user = {
 
 // lets talk about how to declare function with the help of arrow 
 
-// const chai = function () {
-//     username: 'jay'                  
-//     console.log(this.username) 
-// }
-
-// chai()
-
-
 
 
 // const chai =  () => {
@@ -69,7 +61,7 @@ const user = {
 
 
 
-//---------------------------- PURE ARROW FUN. DISS -----------------------------------
+//---------------------------- PURE ARROW FUN. DISSCUSSION -----------------------------------
 
 
 // const addTwo = (num1,num2) => {
@@ -90,3 +82,4 @@ const addTwo = (num1,num2) =>  num1 + num2
 
 
 console.log(addTwo(3, 5))
+

@@ -1,4 +1,4 @@
-              //ARRAY
+//ARRAY
 
 //HOW to declare array
 
@@ -32,7 +32,8 @@
     // console.log(myarrStr);  // Output: "apple,banana,orange,grapes" 
     
     
-// slice, splice
+// slice = return a section of arr
+// splice
 
     console.log("A:" , myarr);
 
@@ -42,7 +43,7 @@
     console.log("B:" , myarr);
 
     const mya2 = myarr.splice(1, 3)
-    console.log("c:" , myarr);        // original arry manupulate ho gaya 
+    console.log("c:" , myarr);        // original arry manupulate ho gaya after using splice
 
     console.log(mya2);
 

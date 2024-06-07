@@ -17,8 +17,9 @@
 const mySym = Symbol("key1")
 
 const user = {
-    [mySym]: "mykey1",
-    name: "jay",                //background mai name: ko string hi mana ja raha hai so string na bhi lagye tho chalega or ham jo no tarhai sai isley acess kar sakte hai( dot sai bhi or [ ] sai bhi )
+    [mySym]: "mykey1",          // symbol declare kiya hai 
+    name: "jay",                        //background mai name: ko string hi mana ja raha hai so string na bhi lagye tho chalega or ham jo no tarhai sai isley acess kar sakte hai( dot sai bhi or [ ] sai bhi )
+    "full name": "jayprakash yadab" ,          
     age: 18,
     location: "west bengal",
     "full name": "jayprakash"   // ab ham srif isey [ ] sai hi acess kar skate hai , dot sai nahi. keuki ab usmai string lagadiya pahle jab string nahi lagate the tab tab dono tarhai sai cess kar sakte the lagane ke bad ab nahikar sakte.
@@ -43,6 +44,7 @@ user.name = "LLLLLLL"
 //onsole.log(user);
 
 
+
 user.greeting = function(){
     console.log("Hello JS user");
 }
@@ -52,4 +54,5 @@ user.greetingTwo = function(){
 
 console.log(user.greeting());
 console.log(user.greetingTwo());
+
 

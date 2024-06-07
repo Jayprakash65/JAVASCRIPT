@@ -12,6 +12,7 @@ let valueInNumber = Number(score)
 // "33abc" => NaN
 //  true => 1; false => 0
 
+
 let isLoggedIn = "hitesh"
 
 let booleanIsLoggedIn = Boolean(isLoggedIn)
@@ -20,6 +21,7 @@ let booleanIsLoggedIn = Boolean(isLoggedIn)
 // 1 => true; 0 => false
 // "" => false
 // "hitesh" => true
+
 
 let someNumber = 33
 
@@ -38,7 +40,7 @@ let negValue = -value
 // console.log(2+2);
 // console.log(2-2);
 // console.log(2*2);
-// console.log(2**3);
+// console.log(2**3);   // 2 to the power 3
 // console.log(2/3);
 // console.log(2%3);
 
@@ -63,7 +65,8 @@ let num1, num2, num3
 num1 = num2 = num3 = 2 + 2   // itna confusing keu hi likhan hai 
 
 let gameCounter = 100
-++gameCounter;
+++gameCounter;  // prefix
+gameCounter++   // postfix
 console.log(gameCounter);
 
 // link to study

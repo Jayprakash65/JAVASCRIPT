@@ -10,7 +10,7 @@ for (let i = 0; i <= 10; i++) {
 }
 
 
-// printing table fro 1 to 12
+// printing table from 1 to 12
 
 for (let i = 1; i <= 12; i++) {
         //console.log(`Outer loop value: ${i}`);

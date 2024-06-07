@@ -42,7 +42,7 @@ const balance = 1000
 // else if 
 
 // if (balance < 500 ) {
-//     console.log("less than ");
+//     console.log("less than 500");
 // } 
 // else if (balance < 750){
 //     console.log("less than 750 ");
@@ -63,7 +63,7 @@ const loggedInFromEmail = false
 
 
 if (userLoggedIn && UPI) {
-    console.log("allow to buy course");       // if we are using and opertaor than both condition must be true, agr ek bhi condition false hua tho code run hi nahi hoga
+    console.log("allow to buy course");       // if we are using "and" opertaor than both condition must be true, agr ek bhi condition false hua tho code run hi nahi hoga
 }
 
 

@@ -1,11 +1,11 @@
 const god = ['hanuman', 'krishna', 'balram']
 const dcheros = ['superman', 'flash', 'batman']
 
-//god.push(dcheros)       /
+//god.push(dcheros)       
 
 
 // console.log(god)
-// console.log(god[3, 1])
+// console.log(god[3][1])
 
 const allhero = god.concat(dcheros)
 console.log(allhero);

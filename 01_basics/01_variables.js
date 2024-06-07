@@ -9,7 +9,7 @@ let accountState;
 
 accountEmail = "hc@hc.com"
 accountPassword = "21212121"
-accountCity = "Bengaluru"
+accountCity = "Bengaluru"     // javascript store space without variable but not recommended
 
 console.log(accountId);
 

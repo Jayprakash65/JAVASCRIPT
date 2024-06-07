@@ -4,7 +4,7 @@
 
 console.log(3 
     +
-     3) // code readability should be high
+     3) // code readability should be high  
 
 console.log("Hitesh")
 
@@ -14,8 +14,8 @@ let age = 18
 let isLoggedIn = false
 let state;
 
-// number => 2 to power 53
-// bigint
+// number => range = 2 to power 53
+// bigint => 12456789221346971256975596445872   // used for to store large number 
 // string => ""
 // boolean => true/false
 // null => standalone value

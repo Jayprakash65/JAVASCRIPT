@@ -4,7 +4,7 @@ const repo  = 1
 //console.log(name + repo);    // old way 
 
 
-//// `` ----->  called backticks
+//// `` ----->  called backticks or string interpolation
 
 //console.log(`hello my name is ${name} and my repo count is ${repo}  `)   // modern way 
 
@@ -33,14 +33,14 @@ const repo  = 1
 
 // const name1 = "    jay   ";
 // console.log(name1);
-// console.log(name1.trim());   // irts trim the starting and ending space
+// console.log(name1.trim());   // its trim the starting and ending space
 
 const url = "https:jay.com/jay%20yadav"
 //console.log(url.replace('%20', '_'));  // means %20 ko replace kardo '_' sai 
 
-console.log(url.includes('prakash'));  // output false because prakash not exits in url 😁
+console.log(url.includes('prakash'));  // output - false   because prakash not exits in url 😁  
 
-console.log(instaName.split('-'));
+console.log(instaName.split('-'));   // split on the basis of - and get array
 
 
 

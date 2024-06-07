@@ -50,7 +50,7 @@
 
 // EVENT PROPAGATION
     
-    // // Bubbling phase for event propagation
+    // // Bubbling phase for event propagation   --->  inside to outside
 
     //     document.getElementById("images").addEventListener('click', function(e) {
     //         console.log('Clicked inside the ul')  
@@ -65,7 +65,7 @@
 
     
 
-    // // Capturing Phase for event propagation
+    // // Capturing Phase for event propagation  ------> outside to inside
 
     //     document.getElementById("images").addEventListener('click', function(e) {
     //         console.log('Clicked inside the ul')  
@@ -107,7 +107,7 @@
 
     document.querySelector('#images').addEventListener('click', function(e) {
         //console.log(e);
-        console.log(e.target.parentNode);
+        console.log(e.target.parentNode);    // slect the li 
         console.log(e.target.tagName);
 
         if(e.target.tagName === 'IMG'){

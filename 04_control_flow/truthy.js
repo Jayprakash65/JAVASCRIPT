@@ -20,15 +20,18 @@ if (userEmail) {
 // output: false 
 
 
+
 // ---------------- RULES --------------------
+
 //falsy value
 
-//false , 0, BigInt 0n, "", null, undefined, NaN
+//false , 0, -0, BigInt 0n, "", null, undefined, NaN
 
 
 //truthy value ----> jo falsy ko chor lar sab truthy hota hai 
 
 // "0", "false", " ", [], {}, function(){}
+
 
 
 
@@ -58,7 +61,10 @@ let val1;
 val1 = null ?? 10 ?? 20
 console.log(val1);
 
+
 // Terniary operator 
+
+// condition ? true state. : false state.
 
 const iceTeaPrice = 100
 iceTeaPrice <= 80 ? console.log('less than 80 ') : console.log('more than 80');

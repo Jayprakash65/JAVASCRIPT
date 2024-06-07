@@ -8,7 +8,7 @@ const coding = ['js', 'rb', 'java', 'cpp', 'python']
 
 
 
-// coding.forEach( greet = (item) => {
+// coding.forEach( (item) => {
 //     console.log(item);
 // })
 
