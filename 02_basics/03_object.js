@@ -22,6 +22,7 @@ const user = {
     "full name": "jayprakash yadab" ,          
     age: 18,
     location: "west bengal",
+    isLoogedDays: []
     "full name": "jayprakash"   // ab ham srif isey [ ] sai hi acess kar skate hai , dot sai nahi. keuki ab usmai string lagadiya pahle jab string nahi lagate the tab tab dono tarhai sai cess kar sakte the lagane ke bad ab nahikar sakte.
 }
 
