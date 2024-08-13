@@ -26,8 +26,9 @@ const user = {
 
 // jaisey hi ap new keyword use karengey tho ek empty object create hota hai jisko intance bola jata hai 
 // step 1 : empty object create ho raha hai 
-// step 2: contusctor function call hoata hai new keyword ke karan and jitne bhi argument hote hai usko pack kar det hai 
-// 
+// step 2: contusctor function call hoata hai new keyword ke karan and jitne bhi argument hote hai usko pack kar deta hai 
+// step 3: apne jitne bhi argument hote hai wo this ke andar inject ho jate hai.
+// step 4: apko mil jata hai 
 
 
 
